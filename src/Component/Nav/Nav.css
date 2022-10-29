@@ -1,0 +1,20 @@
+.navbar .collapse {
+    gap: 30%;
+}
+.navbar .navbar-brand {
+    width: 9.175rem;
+}
+
+.nav-link {
+    color: white !important;
+}
+.navbar-toggler {
+    background-color: white !important;
+}
+.btn {
+    background-color: var(--clr-red);
+    color: white !important;
+}
+.log-out {
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.footer {
+    padding-top: 30px;
+    color: #737373;
+}
+.footer .footer-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 3px 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+}
+.footer a {
+    color: #737373;
+}
+.footer .copy {
+    text-align: center;
+}

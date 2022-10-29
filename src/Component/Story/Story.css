@@ -1,0 +1,26 @@
+.opacity {
+    opacity: .5;
+}
+.story {
+    position: relative;
+    height: 100vh;
+}
+.story img {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+.story  .info {
+    position: absolute;
+    top: 50%;
+    min-width: 350px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.story .info p {
+    width: 100%;
+}

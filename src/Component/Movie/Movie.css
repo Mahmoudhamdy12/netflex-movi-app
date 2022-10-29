@@ -1,0 +1,55 @@
+.movie-center {
+    margin-bottom: 100px;
+    background-color: #181818;
+    color: white;
+}
+.movie-center .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+.movie-center .container .info {
+    flex: 1;
+}
+.movie-center .container .read {
+    color: var(--clr-red);
+    border-bottom: 1px solid;
+}
+.read:hover {
+    cursor: pointer;
+}
+.movie-center .watch-url div:hover a {
+    top: 0px;
+}
+.movie-center .info a {
+    color: white !important;
+    text-decoration: none;
+}
+.movie-center   svg {
+    font-size: 20px;
+    color: orange;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.movie-center .download {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.movie-center .download-btn {
+    position: relative;
+}
+.please-sign {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.please-sign.none {
+    display: none;
+}
