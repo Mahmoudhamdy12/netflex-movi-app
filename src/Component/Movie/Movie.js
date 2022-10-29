@@ -38,7 +38,7 @@ const Movie = () => {
                         <div className='download'>
                         <div className='download-btn btn btn-outline-danger'>
                           <div onClick={()=> handleDownload()} className={ showMovie ? 'please-sign none' : 'please-sign' }></div>
-                          <a  href={direct_source} target='blank' >Download Now</a></div>
+                          <a  href={direct_source} target='blank' >Download and Watch Now</a></div>
                         </div>
                         {para &&  <p> Please sign in to download...</p>}
                     </div>

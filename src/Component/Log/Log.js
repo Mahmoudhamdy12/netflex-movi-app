@@ -52,7 +52,7 @@ const Log = ({showAlert}) => {
                     {loginBtn ? <input  type='email' placeholder='Email' required value={email} onChange={(e)=> setEmail(e.target.value)} /> : ''}
                     <input className='btn' type='submit' value={loginBtn ? 'Sign Up' : 'Login'}  />
                 </form>
-                <p>{loginBtn ? 'Already a user' : 'Need an account?'}</p>
+                <p>{loginBtn ? 'Already a user' : 'New ti Netflix?'}</p>
                 <h5 className='sign-up' 
                 onClick={()=> setLoginBtn(!loginBtn)}>{loginBtn ? 'Login' : 'Sign Up'}</h5>
         </div>

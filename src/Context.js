@@ -24,7 +24,7 @@ const AppProvider = ({ children }) => {
 fetch('https://razorcloud-xtream1.p.rapidapi.com/player_api.php?username=asdf&password=asdf&action=get_vod_streams', options)
 	.then(response => response.json())
 	.then(response => {
-    setMovie(response.slice(1000,1100))
+    setMovie(response.slice(1100,1300))
     setLoading(false)
   })
       .catch(err => console.error(err));
