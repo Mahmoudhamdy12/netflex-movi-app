@@ -15,7 +15,7 @@ const Footer = () => {
                     )
                 })}
             </ul>
-            <p className='copy'>Made by Mahmoud</p>
+              <p className='copy'>Made by <a href='https://mahmoudhamdy-portfolio.netlify.app/'>Mahmoud Hamdy</a></p>
         </div>
     </div>
   )
