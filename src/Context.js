@@ -18,16 +18,17 @@ const AppProvider = ({ children }) => {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '8fbc1f7f86msh12fd7d0fad08d74p1d0b51jsnd7bab9b9976a',
-		'X-RapidAPI-Host': 'razorcloud-xtream1.p.rapidapi.com'
+		'X-RapidAPI-Host': 'movies-app1.p.rapidapi.com'
 	}
 };
-fetch('https://razorcloud-xtream1.p.rapidapi.com/player_api.php?username=asdf&password=asdf&action=get_vod_streams', options)
+
+fetch('https://movies-app1.p.rapidapi.com/api/movies', options)
 	.then(response => response.json())
 	.then(response => {
-    setMovie(response.slice(1100,1300))
+    setMovie(response.results)
     setLoading(false)
   })
-      .catch(err => console.error(err));
+	.catch(err => console.error(err));
     },[])
     
  const searchItems = (e)=> {
@@ -35,8 +36,8 @@ fetch('https://razorcloud-xtream1.p.rapidapi.com/player_api.php?username=asdf&pa
     const newItems = movie.filter((item)=> item.title.toLowerCase().includes(e.toLowerCase()))
     setFilter(newItems)
   }
-    
-  const movie_id = movie.filter((x)=> x.added === movieId)
+  
+  const movie_id = movie.filter((x)=> x._id === movieId)
   useEffect(() => {
     fetchMovies()
   }, [fetchMovies])

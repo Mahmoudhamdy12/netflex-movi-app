@@ -1,6 +1,6 @@
 import './Movies.css'
 import { useGlobalContext } from '../../Context'
-import All from '../../Clone/All'
+import All from '../../Clone/All'  
 import Filter from '../../Clone/Filter'
 const Movies = () => {
     const { searchItems,show} = useGlobalContext()

@@ -7,19 +7,18 @@ const All = () => {
     if(loading){
         return <Loading/>
     }
-    // if(loading && <Loading/> )
   return (
     <>
         {movie.map((item)=> {
-                const { stream_type,stream_icon,rating,
-                        title,added} = item
+                const { _id,countries,genres,image,
+                        rating,title} = item
                 return (
-                  <div key={added} onClick={()=>setMovieId(added)}>
+                  <div key={_id} onClick={()=>setMovieId(_id)}>
                     <Link style={{color:'white'}} to="/movie">
-                    <img src={stream_icon} alt={title} />
+                    <img src={image} alt={title} />
                     <div className='info  p-2'>
-                      <p className='fs-5 fw-bold'>{title}</p>
-                      <p>Rating:{`  ${rating}`}<AiFillStar/><span style={{float:'right'}}>{stream_type}</span></p>
+                      <p className='fs-5 fw-bold'>{title}<span style={{float:'right'}}>{countries[0].name}</span></p>
+                      <p>Rating:{`  ${rating}`}<AiFillStar/><span style={{float:'right'}}>{genres[0].name}</span></p>
                     </div>
                   </Link>
                   </div>
